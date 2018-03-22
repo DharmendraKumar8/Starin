@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+	<meta charset="utf-8"></meta>
+	<title>Email Verification</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+</head>
+	<body>
+		<div align="center" class="page-size" style="max-width: 680px; width: 100%; margin:0 auto;">
+				<table style="background: #f2f2f2; border-spacing: 0; font-family: Arial,Helvetica,sans-serif;">
+					
+					<tr style="background: #f2f2f2;">
+						<td>
+						  <img src="https://www.belrium.io/lib/img/logo.png" style="margin: 0 auto; display: block;"></img>
+						</td>
+					</tr>
+					<tr style="background: #f2f2f2;">
+						<td>
+							<p style="font-size: 30px; color: #d1242f; text-align: center; margin: 10px auto;">Dear <span th:text="${username}"></span></p>
+						</td>
+					</tr>
+					<tr style="background: #2f2f2f;">
+						<td style="padding: 30px 30px; ">
+							<p align="center"  style="color: #fff; font-size: 16px;  line-height: 28px;">
+                                <span style="vertical-align: middle;color: #fff; line-height: 30px;">Please click on the link to verify your email</span><br></br>
+                                <span style="vertical-align: middle; line-height: 30px;"><span th:text="${verificationLink}"></span></span><br></br>   
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding: 0 30px;">
+							<p style="text-align: center; font-size: 18px; word-spacing: 2px;">If you need any assitance in setting up your BKVS account,please contact us at
+							<span style="margin: 7px 0; display: block"><a href="#" style="color: #d1171a; text-decoration: underline; font-size: 17px;">support@starin.com.au</a></span>
+							Thank you for choosing Starin, First KYC compatible blockchain
+							<span style="margin: 30px 0 5px; display: block; color: #d1171a;"><b>Best regards,</b></span>
+							Starin Support
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span style="margin: 20px auto; display: block; text-align: center;">
+								<span style="border-bottom: 1px solid #d1171a;">
+									<a href="#" style="color: #d1171a; border-right: 1px solid #d1171a; padding-right: 10px; text-decoration: none;">Contact Us</a>
+									<a href="#" style="color: #d1171a; padding-left: 10px; text-decoration: none;">Privacy Policy</a>
+								</span>
+							</span>
+						</td>
+					</tr>
+				</table>
+		</div>
+	</body>
+</html>

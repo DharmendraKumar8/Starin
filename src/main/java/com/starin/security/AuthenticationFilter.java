@@ -54,7 +54,7 @@ public class AuthenticationFilter extends GenericFilterBean{
 		logger.debug("Inside my authentication filter Authentication Check");
 		HttpServletRequest hrequest=(HttpServletRequest)request;
 		HttpServletResponse hresponse=(HttpServletResponse)res;
-		String token=hrequest.getHeader("belrium-token");
+		String token=hrequest.getHeader("starin-token");
 		logger.debug("passed token in header :"+token);
 		if(token==null){
 			logger.debug("Token is empty");
